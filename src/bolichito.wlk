@@ -18,14 +18,18 @@ object bolichito {
 	}
 	
 	method estaDesequilibrado() {
-		// completar
-	}
+		return objetoEnMostrador.peso() > objetoEnVidriera.peso()  
+}
 	
 	method tieneAlgoDeColor(color) {
-		// completar
+		return objetoEnMostrador.color() == color or objetoEnVidriera.color() == color  
+}
+
+	method puedeMejorar() { 
+		return self.estaDesequilibrado() or self.esMonocromatico() 
 	}
 
 	method puedeOfrecerleAlgoA(persona) {
-		// completar
+		objetoEnMostrador() or objetoEnVidriera()
 	}
 }
